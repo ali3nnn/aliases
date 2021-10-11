@@ -15,7 +15,6 @@
 - gbD='git branch -D'
 - gba='git branch -a'
 - gbd='git branch -d'
-- gbda='git branch --no-color --merged | command grep -vE "^([+*]|\s*($(git_main_branch)|$(git_develop_branch))\s*$)" | command xargs git branch -d 2>/dev/null'
 - gbl='git blame -b -w'
 - gbnm='git branch --no-merged'
 - gbr='git branch --remote'
@@ -163,3 +162,4 @@ glp=_git_log_prettily
 - gupv='git pull --rebase -v'
 - gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 - gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"'
+- gbda='git branch --no-color --merged | command grep -vE "^([+*]|\s*($(git_main_branch)|$(git_develop_branch))\s*$)" | command xargs git branch -d 2>/dev/null'
